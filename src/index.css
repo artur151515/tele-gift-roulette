@@ -1,8 +1,19 @@
+@import "@fontsource-variable/inter/index.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Telegram Gift Roulette Design System */
+
+html, body, #root { height: 100%; }
+body {
+  @apply bg-[#0b1020] text-white;
+  background-image: radial-gradient(1200px circle at 80% -10%, rgba(56,189,248,.15), transparent 60%);
+}
+
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 @layer base {
   :root {
